@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Fun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                fontFamily: {
+                comic: ['"Comic Neue"', 'cursive']
+                },
+            }
+            }
+        }
+        module.exports = {
+            theme: {
+                extend: {
+                screens: {
+                    'max-sm': {'max': '639px'},
+                    'max-md': {'max': '767px'},
+                    'max-lg': {'max': '1023px'},
+                },
+            },
+            },
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="font-comic w-[100vw] md:w-screen ">
+    <header class="bg-white flex flex-wrap items-center justify-evenly px-4 py-4 drop-shadow-lg drop-shadow-blue-500/40">
+        <div class="w-full mt-4 flex flex-col gap-4 items-center sm:mt-0 sm:flex-row sm:justify-end sm:gap-6 sm:w-auto">
+            <a href="#Home" class="text-[#1e293b] text-2xl sm:text-3xl font-bold">Job <span class="text-[#2d56d2]">Opportunities</span></a>
+        </div>
+    </header>
+    <div class=" bg-[#f5f7fa] w-full h-content md:h-[90vh] bg-cover bg-center flex flex-col items-center justify-center">
+        <div class="container flex flex-col items-center justify-center md:flex md:flex-row md:justify-evenly text=black mb-10 rounded-[22px]">
+            <div class="card w-[300px] md:w-[400px] bg-white text-[#333] px-4 py-4 hover:drop-shadow-lg hover:drop-shadow-blue-500/40 mb-4"> 
+                <div class="container flex items-center justify-between mb-5">
+                    <h1 class="font-bold text-2xl">Front-end Developer</h1>
+                    <p class="font-bold text-[#4f46e5] bg-[#e0e7ff] py-2 px-2 rounded-full max-sm:w-[160px] text-center">Full-Time</p>
+                </div>
+                <div class="container mb-5 font-bold text-xl">
+                    <div class="1 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvklEQVR4nO2V0Q2DQAxDvf+qb4iyQFW40ORCsCU+ELrAk+0gWQ8T8PnHtZtDBsGO9IrS9s5gEOxIijjJdPS+TUc0BQRvLd7hCFn/IYo7YpAz2ZGb63c1ouq6fh8PgrdWs7JH58ggU36ITCk7SSBRZxUFWX3h1XljQKiOlgxCr2gxpewkgbgj3coenSODJDlS3hGmlJ0kkKizioJ8e/7r7NV5Y0CojpYMwjuiVQ7CwsesnC3vCAbBjnAnWpb26gCqlt4eDSBq4AAAAABJRU5ErkJggg==" alt="company" height="20px" width="20px">
+                        <p>WebSolutions Co.</p>
+                    </div>
+                    <div class="2 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC60lEQVR4nO2ZS2sUQRSFyxdRfCCiRDEgiIKgYFYaf4A70V3UlWvBlQouXIgSgjtJXMTHL3ChC3fiRvGViOhGUGYzODiTrnNuJyMmksRoSZGGjDiJVUlVT4944ELT3dzur0/V7brdSv3XnyK5EcBpkncAvCYJADM2su2R7Ngpe64qmgDsADBEcpKkcQx77l2t9Z5W378qlUodJK+RnPAA+C0yx67bXKoVqlarW0k+XSpAE6CXWuvtuUKkaXoAQCUURAPMJ5s7F4gkSTpjQDTCJEnSGRWiXC6vtUMgFgTn40XUOZNN7NgQJnOmP1qJXU51WgLIdJIku2OADOUFwfm4HRRCa72B5NcWgEzYawcDyZYdPjcwRXJARA6Pjo6ut2G3SQ5mx3yGWG8wELs+8rjwZ631wYVyaa277Tke+W4FA8kWgE5OLAbRCOPqDIDhYCCckwvIgGtOADcdc+pgILYUulxURA655hSRHleXVSi5DgOfCpNVQheQbyFBktAgIrLJEaQWDATAh1YNLQDvQ4I8dHx6g6EnO4D7IUH6Pcpv99/yZe8SpwJC8mpIkF7PF2J3qBciyePBQGq12jYAPzxgpu3QsfPAFgAbaZoesfs8nDAAvtuioEKK5DuPpxgqngWFyLup4nxcjAGyL08IAD/HxsZ2BQfJYN7mCPMkCkQGcjZHR05GA7HVB0A9B5CaMWaNiimSN3Jw47KKLRHp8m1XPSG+jI+Pb1Z5yLafER3pU3lJRHbG+MYFIK3X61tUnrKLudAgInJO5a1KpbIu5MdsAB+jV6qFJCJnAoIcU62SMWYlyTcBIB6rVkvP9RczywCZBLBXFUFw7yCbuXFeFUWlUqnDfiRYAsSIMWaVKpJEpAfArAfIVJqm+1URRbLPA+SCKqqMMatJPncYUo9sxVNFloh0AZBFQLT9jafaQSRP2Fa1iROzInJUtZMAXGnixiXVbjLGrCB5r8GNB3afakfpudZ4GMCroD811T+sX1ZN6JnEqOe9AAAAAElFTkSuQmCC" alt="marker" height="20px" width="20px">
+                        <p>New York, NY</p>
+                    </div>
+                    <div class="3 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/0lEQVR4nO1aS4gcZRBu388Y3wg+8SZqFJ8gqCARQU+JbyR4EESj15hookISNFkDwZMXRUVC3AQPogdBs26EaOIL9LDCelgcne3u76uZnY1RDz5ayvTEyu/MdPVMz8bDFPzQTP/111//X1VfVfVE0YhGNKIFo9nZ2XPSNL2H5EaSO0lOkvwyH/q8Q9+laXp3vV4/O/o/0dzc3OkknwCwF8BfJDPP0LkAPiO5stlsLj6iCgB4AcC8d/M9lGrpTTUXWiGSD5FMumyqBmAbgLUkV4jIch36rL/l72pdlIoBPDh0BdI0PRXAWx02QACbGo3G5d61Go3GFQA2A5AOh/FmHMenDM2RAXwRCNxPctUgQvVwSK4m+XOw9ucqcxhKfBcI+lBEzq9KhohcAGBXIGOqMmVycwpv4sUsy44u4iV5Hcn1SZJc6ZGVZdkxAMYCWfvq9frJAyvSwSdWOTd1LIBmvpl6lmVHeWWSXBPIfL2K6HTYTXh51SQsb1k/ArAlkP3AIECXWJ/wmNPMzMyJAB4h+V6wkQkNv7puCTObMGvM9oUzCnY2OnkcW0MqyekCAExFZKlnD41G40KSBwzvxn5Qu1XGL5rN5sWKJ04k358kyRLPXgA8YzOAUreiuZMFO499A3jH8PwG4HkAN5O8VkRuFJEnATTMpt4tETXFrP24WxFNAI3ATUXzW63WmQD+MDz3d5onIrebOX+KyGnO/YwZvk/LgN+hLNaTdgC4xQia6xVqNWjkc7/2huQkSZbYA3CVAHk90Wb6wSMIwK3m6tFr7vT09AlqarVa7STP2m0C8FNbhtYzURHlRVFbkW2FDAeVP09Pygi6I6qYSG43h7XBw7DTKLLWK8iYTJYj+qNxHF/SarXO0JFl2XGDKALgWaPIuEeR3YZhhVdQmqZXk/y1R8hVv/tGQ3lZs1ISkYfNepNREakTthlEZFlUggDcFabjXZSaSpLk0jJri8gys8ZXQ1VEqdlsXgTgFQA/Fij0vZrcMBXZ3Y9pdYtQbR9J0/Qqki/boEBy6zBNa4cxgXVRxaSIb1OOLMuOd/I9ZxR5u5BBQ1vZ8FuG1NEB/G5kXNNH+F1fFhBr3g3Oz8+fRfI2NaeiuQq0xg+XlgVEEVleyKDwb+1YU3PnKbdbPO878rJS66cH/etQiqKHFnko7wC2GTcXzY/j+Fybn6VpelOneZpbkXzVmEjsKdYAvGR49kRe0jamUUScafxHNt8i+ZiI3KBpvA4A95L8IAjBTzn2ssim/7quWxEtXoLCarVD4PW9kL3D+MSTtgBYZzPr0uWuTR4VrbXv5BB6p6dKzIuwRR5w5eGlbnG06rDIYrVhI3yXNgSK+NQR8wTPAquObwG8oZHN206iWUNbSt5C7D+kDeXgJMcWqh1Ecmsg+75oENKGcnCyazx8enu50/9ToJVp0ME0HPLxWjQo6UlqQzk4nS0eM9MSVVMLEbmshDltDWTtraRlaur4qUDAhPadKhHwbztpMkz3K/9ElyP+vuDKD4jI09qy6XfdHCc0xP7S4SaG851Rr1gbyh3CqWgg8Dbd2mmHInYAdlnbJyozp16kDWXtxXbBCE3utmsI1hpCOx469DkPy/qu3oW3PnB06hNnNgQZQF9DEVvBTvrFiQoVWqkdwKD6K9q8zt2jLdAj+nm6E6lz5l9wtTgbB/Bx+w8D+fO4vtM57lR8RCMaUVQF/Q0G+kgqpnKKmAAAAABJRU5ErkJggg==" alt="us-dollar-circled--v2" height="20px" width="20px">
+                        <p>$90,000 - $110,000</p>
+                    </div>
+                </div>
+                <p class="mb-5 font-bold text-xl">Seeking a talented Front-end Developer proficient in HTML, CSS, JavaScript, and modern frameworks like React or Vue.</p>
+                <button class="font-bold text-[16px] bg-[#2d56d2] text-white py-2 px-2 w-[150px] rounded-[17px] hover:bg-[#1e40af] hover:drop-shadow-lg hover:drop-shadow-blue-500/40">Apply Now</button>
+            </div>
+            <div class="card w-[300px] md:w-[400px] bg-white text-[#333] px-4 py-4 hover:drop-shadow-lg hover:drop-shadow-blue-500/40 mb-4"> 
+                <div class="container flex items-center justify-between mb-5">
+                    <h1 class="font-bold text-2xl">UX/UI Designer</h1>
+                    <p class="font-bold text-[#4f46e5] bg-[#e0e7ff] py-2 px-2 rounded-full max-sm:w-[160px] text-center">Contract</p>
+                </div>
+                <div class="container mb-5 font-bold text-xl">
+                    <div class="1 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvklEQVR4nO2V0Q2DQAxDvf+qb4iyQFW40ORCsCU+ELrAk+0gWQ8T8PnHtZtDBsGO9IrS9s5gEOxIijjJdPS+TUc0BQRvLd7hCFn/IYo7YpAz2ZGb63c1ouq6fh8PgrdWs7JH58ggU36ITCk7SSBRZxUFWX3h1XljQKiOlgxCr2gxpewkgbgj3coenSODJDlS3hGmlJ0kkKizioJ8e/7r7NV5Y0CojpYMwjuiVQ7CwsesnC3vCAbBjnAnWpb26gCqlt4eDSBq4AAAAABJRU5ErkJggg==" alt="company" height="20px" width="20px">
+                        <p>Creative Design Studio</p>
+                    </div>
+                    <div class="2 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC60lEQVR4nO2ZS2sUQRSFyxdRfCCiRDEgiIKgYFYaf4A70V3UlWvBlQouXIgSgjtJXMTHL3ChC3fiRvGViOhGUGYzODiTrnNuJyMmksRoSZGGjDiJVUlVT4944ELT3dzur0/V7brdSv3XnyK5EcBpkncAvCYJADM2su2R7Ngpe64qmgDsADBEcpKkcQx77l2t9Z5W378qlUodJK+RnPAA+C0yx67bXKoVqlarW0k+XSpAE6CXWuvtuUKkaXoAQCUURAPMJ5s7F4gkSTpjQDTCJEnSGRWiXC6vtUMgFgTn40XUOZNN7NgQJnOmP1qJXU51WgLIdJIku2OADOUFwfm4HRRCa72B5NcWgEzYawcDyZYdPjcwRXJARA6Pjo6ut2G3SQ5mx3yGWG8wELs+8rjwZ631wYVyaa277Tke+W4FA8kWgE5OLAbRCOPqDIDhYCCckwvIgGtOADcdc+pgILYUulxURA655hSRHleXVSi5DgOfCpNVQheQbyFBktAgIrLJEaQWDATAh1YNLQDvQ4I8dHx6g6EnO4D7IUH6Pcpv99/yZe8SpwJC8mpIkF7PF2J3qBciyePBQGq12jYAPzxgpu3QsfPAFgAbaZoesfs8nDAAvtuioEKK5DuPpxgqngWFyLup4nxcjAGyL08IAD/HxsZ2BQfJYN7mCPMkCkQGcjZHR05GA7HVB0A9B5CaMWaNiimSN3Jw47KKLRHp8m1XPSG+jI+Pb1Z5yLafER3pU3lJRHbG+MYFIK3X61tUnrKLudAgInJO5a1KpbIu5MdsAB+jV6qFJCJnAoIcU62SMWYlyTcBIB6rVkvP9RczywCZBLBXFUFw7yCbuXFeFUWlUqnDfiRYAsSIMWaVKpJEpAfArAfIVJqm+1URRbLPA+SCKqqMMatJPncYUo9sxVNFloh0AZBFQLT9jafaQSRP2Fa1iROzInJUtZMAXGnixiXVbjLGrCB5r8GNB3afakfpudZ4GMCroD811T+sX1ZN6JnEqOe9AAAAAElFTkSuQmCC" alt="marker" height="20px" width="20px">
+                        <p>Remote</p>
+                    </div>
+                    <div class="3 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/0lEQVR4nO1aS4gcZRBu388Y3wg+8SZqFJ8gqCARQU+JbyR4EESj15hookISNFkDwZMXRUVC3AQPogdBs26EaOIL9LDCelgcne3u76uZnY1RDz5ayvTEyu/MdPVMz8bDFPzQTP/111//X1VfVfVE0YhGNKIFo9nZ2XPSNL2H5EaSO0lOkvwyH/q8Q9+laXp3vV4/O/o/0dzc3OkknwCwF8BfJDPP0LkAPiO5stlsLj6iCgB4AcC8d/M9lGrpTTUXWiGSD5FMumyqBmAbgLUkV4jIch36rL/l72pdlIoBPDh0BdI0PRXAWx02QACbGo3G5d61Go3GFQA2A5AOh/FmHMenDM2RAXwRCNxPctUgQvVwSK4m+XOw9ucqcxhKfBcI+lBEzq9KhohcAGBXIGOqMmVycwpv4sUsy44u4iV5Hcn1SZJc6ZGVZdkxAMYCWfvq9frJAyvSwSdWOTd1LIBmvpl6lmVHeWWSXBPIfL2K6HTYTXh51SQsb1k/ArAlkP3AIECXWJ/wmNPMzMyJAB4h+V6wkQkNv7puCTObMGvM9oUzCnY2OnkcW0MqyekCAExFZKlnD41G40KSBwzvxn5Qu1XGL5rN5sWKJ04k358kyRLPXgA8YzOAUreiuZMFO499A3jH8PwG4HkAN5O8VkRuFJEnATTMpt4tETXFrP24WxFNAI3ATUXzW63WmQD+MDz3d5onIrebOX+KyGnO/YwZvk/LgN+hLNaTdgC4xQia6xVqNWjkc7/2huQkSZbYA3CVAHk90Wb6wSMIwK3m6tFr7vT09AlqarVa7STP2m0C8FNbhtYzURHlRVFbkW2FDAeVP09Pygi6I6qYSG43h7XBw7DTKLLWK8iYTJYj+qNxHF/SarXO0JFl2XGDKALgWaPIuEeR3YZhhVdQmqZXk/y1R8hVv/tGQ3lZs1ISkYfNepNREakTthlEZFlUggDcFabjXZSaSpLk0jJri8gys8ZXQ1VEqdlsXgTgFQA/Fij0vZrcMBXZ3Y9pdYtQbR9J0/Qqki/boEBy6zBNa4cxgXVRxaSIb1OOLMuOd/I9ZxR5u5BBQ1vZ8FuG1NEB/G5kXNNH+F1fFhBr3g3Oz8+fRfI2NaeiuQq0xg+XlgVEEVleyKDwb+1YU3PnKbdbPO878rJS66cH/etQiqKHFnko7wC2GTcXzY/j+Fybn6VpelOneZpbkXzVmEjsKdYAvGR49kRe0jamUUScafxHNt8i+ZiI3KBpvA4A95L8IAjBTzn2ssim/7quWxEtXoLCarVD4PW9kL3D+MSTtgBYZzPr0uWuTR4VrbXv5BB6p6dKzIuwRR5w5eGlbnG06rDIYrVhI3yXNgSK+NQR8wTPAquObwG8oZHN206iWUNbSt5C7D+kDeXgJMcWqh1Ecmsg+75oENKGcnCyazx8enu50/9ToJVp0ME0HPLxWjQo6UlqQzk4nS0eM9MSVVMLEbmshDltDWTtraRlaur4qUDAhPadKhHwbztpMkz3K/9ElyP+vuDKD4jI09qy6XfdHCc0xP7S4SaG851Rr1gbyh3CqWgg8Dbd2mmHInYAdlnbJyozp16kDWXtxXbBCE3utmsI1hpCOx469DkPy/qu3oW3PnB06hNnNgQZQF9DEVvBTvrFiQoVWqkdwKD6K9q8zt2jLdAj+nm6E6lz5l9wtTgbB/Bx+w8D+fO4vtM57lR8RCMaUVQF/Q0G+kgqpnKKmAAAAABJRU5ErkJggg==" alt="us-dollar-circled--v2" height="20px" width="20px">
+                        <p>$85,000 - $100,000</p>
+                    </div>
+                </div>
+                <p class="mb-5 font-bold text-xl">Looking for a creative UX/UI Designer with experience in user research, wireframing, and prototyping using Figma or Sketch.</p>
+                <button class="font-bold text-xl bg-[#2d56d2] text-white py-2 px-2 w-[150px] rounded-[17px] hover:bg-[#1e40af] hover:drop-shadow-lg hover:drop-shadow-blue-500/40">Apply Now</button>
+            </div>
+            <div class="card w-[300px] md:w-[400px] bg-white text-[#333] px-4 py-4 hover:drop-shadow-lg hover:drop-shadow-blue-500/40 mb-4"> 
+                <div class="container flex items-center justify-between mb-5">
+                    <h1 class="font-bold text-2xl">Data Scientist</h1>
+                    <p class="font-bold text-[#4f46e5] bg-[#e0e7ff] py-2 px-2 rounded-full max-sm:w-[160px] text-center">Full-Time</p>
+                </div>
+                <div class="container mb-5 font-bold text-xl">
+                    <div class="1 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvklEQVR4nO2V0Q2DQAxDvf+qb4iyQFW40ORCsCU+ELrAk+0gWQ8T8PnHtZtDBsGO9IrS9s5gEOxIijjJdPS+TUc0BQRvLd7hCFn/IYo7YpAz2ZGb63c1ouq6fh8PgrdWs7JH58ggU36ITCk7SSBRZxUFWX3h1XljQKiOlgxCr2gxpewkgbgj3coenSODJDlS3hGmlJ0kkKizioJ8e/7r7NV5Y0CojpYMwjuiVQ7CwsesnC3vCAbBjnAnWpb26gCqlt4eDSBq4AAAAABJRU5ErkJggg==" alt="company" height="20px" width="20px">
+                        <p>DataInsights LLC</p>
+                    </div>
+                    <div class="2 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC60lEQVR4nO2ZS2sUQRSFyxdRfCCiRDEgiIKgYFYaf4A70V3UlWvBlQouXIgSgjtJXMTHL3ChC3fiRvGViOhGUGYzODiTrnNuJyMmksRoSZGGjDiJVUlVT4944ELT3dzur0/V7brdSv3XnyK5EcBpkncAvCYJADM2su2R7Ngpe64qmgDsADBEcpKkcQx77l2t9Z5W378qlUodJK+RnPAA+C0yx67bXKoVqlarW0k+XSpAE6CXWuvtuUKkaXoAQCUURAPMJ5s7F4gkSTpjQDTCJEnSGRWiXC6vtUMgFgTn40XUOZNN7NgQJnOmP1qJXU51WgLIdJIku2OADOUFwfm4HRRCa72B5NcWgEzYawcDyZYdPjcwRXJARA6Pjo6ut2G3SQ5mx3yGWG8wELs+8rjwZ631wYVyaa277Tke+W4FA8kWgE5OLAbRCOPqDIDhYCCckwvIgGtOADcdc+pgILYUulxURA655hSRHleXVSi5DgOfCpNVQheQbyFBktAgIrLJEaQWDATAh1YNLQDvQ4I8dHx6g6EnO4D7IUH6Pcpv99/yZe8SpwJC8mpIkF7PF2J3qBciyePBQGq12jYAPzxgpu3QsfPAFgAbaZoesfs8nDAAvtuioEKK5DuPpxgqngWFyLup4nxcjAGyL08IAD/HxsZ2BQfJYN7mCPMkCkQGcjZHR05GA7HVB0A9B5CaMWaNiimSN3Jw47KKLRHp8m1XPSG+jI+Pb1Z5yLafER3pU3lJRHbG+MYFIK3X61tUnrKLudAgInJO5a1KpbIu5MdsAB+jV6qFJCJnAoIcU62SMWYlyTcBIB6rVkvP9RczywCZBLBXFUFw7yCbuXFeFUWlUqnDfiRYAsSIMWaVKpJEpAfArAfIVJqm+1URRbLPA+SCKqqMMatJPncYUo9sxVNFloh0AZBFQLT9jafaQSRP2Fa1iROzInJUtZMAXGnixiXVbjLGrCB5r8GNB3afakfpudZ4GMCroD811T+sX1ZN6JnEqOe9AAAAAElFTkSuQmCC" alt="marker" height="20px" width="20px">
+                        <p>Boston, MA</p>
+                    </div>
+                    <div class="3 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/0lEQVR4nO1aS4gcZRBu388Y3wg+8SZqFJ8gqCARQU+JbyR4EESj15hookISNFkDwZMXRUVC3AQPogdBs26EaOIL9LDCelgcne3u76uZnY1RDz5ayvTEyu/MdPVMz8bDFPzQTP/111//X1VfVfVE0YhGNKIFo9nZ2XPSNL2H5EaSO0lOkvwyH/q8Q9+laXp3vV4/O/o/0dzc3OkknwCwF8BfJDPP0LkAPiO5stlsLj6iCgB4AcC8d/M9lGrpTTUXWiGSD5FMumyqBmAbgLUkV4jIch36rL/l72pdlIoBPDh0BdI0PRXAWx02QACbGo3G5d61Go3GFQA2A5AOh/FmHMenDM2RAXwRCNxPctUgQvVwSK4m+XOw9ucqcxhKfBcI+lBEzq9KhohcAGBXIGOqMmVycwpv4sUsy44u4iV5Hcn1SZJc6ZGVZdkxAMYCWfvq9frJAyvSwSdWOTd1LIBmvpl6lmVHeWWSXBPIfL2K6HTYTXh51SQsb1k/ArAlkP3AIECXWJ/wmNPMzMyJAB4h+V6wkQkNv7puCTObMGvM9oUzCnY2OnkcW0MqyekCAExFZKlnD41G40KSBwzvxn5Qu1XGL5rN5sWKJ04k358kyRLPXgA8YzOAUreiuZMFO499A3jH8PwG4HkAN5O8VkRuFJEnATTMpt4tETXFrP24WxFNAI3ATUXzW63WmQD+MDz3d5onIrebOX+KyGnO/YwZvk/LgN+hLNaTdgC4xQia6xVqNWjkc7/2huQkSZbYA3CVAHk90Wb6wSMIwK3m6tFr7vT09AlqarVa7STP2m0C8FNbhtYzURHlRVFbkW2FDAeVP09Pygi6I6qYSG43h7XBw7DTKLLWK8iYTJYj+qNxHF/SarXO0JFl2XGDKALgWaPIuEeR3YZhhVdQmqZXk/y1R8hVv/tGQ3lZs1ISkYfNepNREakTthlEZFlUggDcFabjXZSaSpLk0jJri8gys8ZXQ1VEqdlsXgTgFQA/Fij0vZrcMBXZ3Y9pdYtQbR9J0/Qqki/boEBy6zBNa4cxgXVRxaSIb1OOLMuOd/I9ZxR5u5BBQ1vZ8FuG1NEB/G5kXNNH+F1fFhBr3g3Oz8+fRfI2NaeiuQq0xg+XlgVEEVleyKDwb+1YU3PnKbdbPO878rJS66cH/etQiqKHFnko7wC2GTcXzY/j+Fybn6VpelOneZpbkXzVmEjsKdYAvGR49kRe0jamUUScafxHNt8i+ZiI3KBpvA4A95L8IAjBTzn2ssim/7quWxEtXoLCarVD4PW9kL3D+MSTtgBYZzPr0uWuTR4VrbXv5BB6p6dKzIuwRR5w5eGlbnG06rDIYrVhI3yXNgSK+NQR8wTPAquObwG8oZHN206iWUNbSt5C7D+kDeXgJMcWqh1Ecmsg+75oENKGcnCyazx8enu50/9ToJVp0ME0HPLxWjQo6UlqQzk4nS0eM9MSVVMLEbmshDltDWTtraRlaur4qUDAhPadKhHwbztpMkz3K/9ElyP+vuDKD4jI09qy6XfdHCc0xP7S4SaG851Rr1gbyh3CqWgg8Dbd2mmHInYAdlnbJyozp16kDWXtxXbBCE3utmsI1hpCOx469DkPy/qu3oW3PnB06hNnNgQZQF9DEVvBTvrFiQoVWqkdwKD6K9q8zt2jLdAj+nm6E6lz5l9wtTgbB/Bx+w8D+fO4vtM57lR8RCMaUVQF/Q0G+kgqpnKKmAAAAABJRU5ErkJggg==" alt="us-dollar-circled--v2" height="20px" width="20px">
+                        <p>$110,000 - $140,000</p>
+                    </div>
+                </div>
+                <p class="mb-5 font-bold text-xl">Seeking a Data Scientist with expertise in machine learning, statistical analysis, and programming skills in Python and R.</p>
+                <button class="font-bold text-xl bg-[#2d56d2] text-white py-2 px-2 w-[150px] rounded-[17px] hover:bg-[#1e40af] hover:drop-shadow-lg hover:drop-shadow-blue-500/40">Apply Now</button>
+            </div>
+        </div>
+        <div class="container flex flex-col items-center justify-center md:flex md:flex-row md:justify-evenly text=black rounded-[22px]">
+            <div class="card w-[300px] md:w-[400px] bg-white text-[#333] px-4 py-4 hover:drop-shadow-lg hover:drop-shadow-blue-500/40 mb-4"> 
+                <div class="container flex items-center justify-between mb-5">
+                    <h1 class="font-bold text-2xl">DevOps Engineer</h1>
+                    <p class="font-bold text-[#4f46e5] bg-[#e0e7ff] py-2 px-2 rounded-full max-sm:w-[160px] text-center">Full-Time</p>
+                </div>
+                <div class="container mb-5 font-bold text-xl">
+                    <div class="1 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvklEQVR4nO2V0Q2DQAxDvf+qb4iyQFW40ORCsCU+ELrAk+0gWQ8T8PnHtZtDBsGO9IrS9s5gEOxIijjJdPS+TUc0BQRvLd7hCFn/IYo7YpAz2ZGb63c1ouq6fh8PgrdWs7JH58ggU36ITCk7SSBRZxUFWX3h1XljQKiOlgxCr2gxpewkgbgj3coenSODJDlS3hGmlJ0kkKizioJ8e/7r7NV5Y0CojpYMwjuiVQ7CwsesnC3vCAbBjnAnWpb26gCqlt4eDSBq4AAAAABJRU5ErkJggg==" alt="company" height="20px" width="20px">
+                        <p>CloudTech Solutions </p>
+                    </div>
+                    <div class="2 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC60lEQVR4nO2ZS2sUQRSFyxdRfCCiRDEgiIKgYFYaf4A70V3UlWvBlQouXIgSgjtJXMTHL3ChC3fiRvGViOhGUGYzODiTrnNuJyMmksRoSZGGjDiJVUlVT4944ELT3dzur0/V7brdSv3XnyK5EcBpkncAvCYJADM2su2R7Ngpe64qmgDsADBEcpKkcQx77l2t9Z5W378qlUodJK+RnPAA+C0yx67bXKoVqlarW0k+XSpAE6CXWuvtuUKkaXoAQCUURAPMJ5s7F4gkSTpjQDTCJEnSGRWiXC6vtUMgFgTn40XUOZNN7NgQJnOmP1qJXU51WgLIdJIku2OADOUFwfm4HRRCa72B5NcWgEzYawcDyZYdPjcwRXJARA6Pjo6ut2G3SQ5mx3yGWG8wELs+8rjwZ631wYVyaa277Tke+W4FA8kWgE5OLAbRCOPqDIDhYCCckwvIgGtOADcdc+pgILYUulxURA655hSRHleXVSi5DgOfCpNVQheQbyFBktAgIrLJEaQWDATAh1YNLQDvQ4I8dHx6g6EnO4D7IUH6Pcpv99/yZe8SpwJC8mpIkF7PF2J3qBciyePBQGq12jYAPzxgpu3QsfPAFgAbaZoesfs8nDAAvtuioEKK5DuPpxgqngWFyLup4nxcjAGyL08IAD/HxsZ2BQfJYN7mCPMkCkQGcjZHR05GA7HVB0A9B5CaMWaNiimSN3Jw47KKLRHp8m1XPSG+jI+Pb1Z5yLafER3pU3lJRHbG+MYFIK3X61tUnrKLudAgInJO5a1KpbIu5MdsAB+jV6qFJCJnAoIcU62SMWYlyTcBIB6rVkvP9RczywCZBLBXFUFw7yCbuXFeFUWlUqnDfiRYAsSIMWaVKpJEpAfArAfIVJqm+1URRbLPA+SCKqqMMatJPncYUo9sxVNFloh0AZBFQLT9jafaQSRP2Fa1iROzInJUtZMAXGnixiXVbjLGrCB5r8GNB3afakfpudZ4GMCroD811T+sX1ZN6JnEqOe9AAAAAElFTkSuQmCC" alt="marker" height="20px" width="20px">
+                        <p>Seattle, WA</p>
+                    </div>
+                    <div class="3 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/0lEQVR4nO1aS4gcZRBu388Y3wg+8SZqFJ8gqCARQU+JbyR4EESj15hookISNFkDwZMXRUVC3AQPogdBs26EaOIL9LDCelgcne3u76uZnY1RDz5ayvTEyu/MdPVMz8bDFPzQTP/111//X1VfVfVE0YhGNKIFo9nZ2XPSNL2H5EaSO0lOkvwyH/q8Q9+laXp3vV4/O/o/0dzc3OkknwCwF8BfJDPP0LkAPiO5stlsLj6iCgB4AcC8d/M9lGrpTTUXWiGSD5FMumyqBmAbgLUkV4jIch36rL/l72pdlIoBPDh0BdI0PRXAWx02QACbGo3G5d61Go3GFQA2A5AOh/FmHMenDM2RAXwRCNxPctUgQvVwSK4m+XOw9ucqcxhKfBcI+lBEzq9KhohcAGBXIGOqMmVycwpv4sUsy44u4iV5Hcn1SZJc6ZGVZdkxAMYCWfvq9frJAyvSwSdWOTd1LIBmvpl6lmVHeWWSXBPIfL2K6HTYTXh51SQsb1k/ArAlkP3AIECXWJ/wmNPMzMyJAB4h+V6wkQkNv7puCTObMGvM9oUzCnY2OnkcW0MqyekCAExFZKlnD41G40KSBwzvxn5Qu1XGL5rN5sWKJ04k358kyRLPXgA8YzOAUreiuZMFO499A3jH8PwG4HkAN5O8VkRuFJEnATTMpt4tETXFrP24WxFNAI3ATUXzW63WmQD+MDz3d5onIrebOX+KyGnO/YwZvk/LgN+hLNaTdgC4xQia6xVqNWjkc7/2huQkSZbYA3CVAHk90Wb6wSMIwK3m6tFr7vT09AlqarVa7STP2m0C8FNbhtYzURHlRVFbkW2FDAeVP09Pygi6I6qYSG43h7XBw7DTKLLWK8iYTJYj+qNxHF/SarXO0JFl2XGDKALgWaPIuEeR3YZhhVdQmqZXk/y1R8hVv/tGQ3lZs1ISkYfNepNREakTthlEZFlUggDcFabjXZSaSpLk0jJri8gys8ZXQ1VEqdlsXgTgFQA/Fij0vZrcMBXZ3Y9pdYtQbR9J0/Qqki/boEBy6zBNa4cxgXVRxaSIb1OOLMuOd/I9ZxR5u5BBQ1vZ8FuG1NEB/G5kXNNH+F1fFhBr3g3Oz8+fRfI2NaeiuQq0xg+XlgVEEVleyKDwb+1YU3PnKbdbPO878rJS66cH/etQiqKHFnko7wC2GTcXzY/j+Fybn6VpelOneZpbkXzVmEjsKdYAvGR49kRe0jamUUScafxHNt8i+ZiI3KBpvA4A95L8IAjBTzn2ssim/7quWxEtXoLCarVD4PW9kL3D+MSTtgBYZzPr0uWuTR4VrbXv5BB6p6dKzIuwRR5w5eGlbnG06rDIYrVhI3yXNgSK+NQR8wTPAquObwG8oZHN206iWUNbSt5C7D+kDeXgJMcWqh1Ecmsg+75oENKGcnCyazx8enu50/9ToJVp0ME0HPLxWjQo6UlqQzk4nS0eM9MSVVMLEbmshDltDWTtraRlaur4qUDAhPadKhHwbztpMkz3K/9ElyP+vuDKD4jI09qy6XfdHCc0xP7S4SaG851Rr1gbyh3CqWgg8Dbd2mmHInYAdlnbJyozp16kDWXtxXbBCE3utmsI1hpCOx469DkPy/qu3oW3PnB06hNnNgQZQF9DEVvBTvrFiQoVWqkdwKD6K9q8zt2jLdAj+nm6E6lz5l9wtTgbB/Bx+w8D+fO4vtM57lR8RCMaUVQF/Q0G+kgqpnKKmAAAAABJRU5ErkJggg==" alt="us-dollar-circled--v2" height="20px" width="20px">
+                        <p>$115,000 - $135,000</p>
+                    </div>
+                </div>
+                <p class="mb-5 font-bold text-xl">Looking for a DevOps Engineer with experience in CI/CD pipelines, containerization, and cloud infrastructure (AWS, Azure, or GCP).</p>
+                <button class="font-bold text-xl bg-[#2d56d2] text-white py-2 px-2 w-[150px] rounded-[17px] hover:bg-[#1e40af] hover:drop-shadow-lg hover:drop-shadow-blue-500/40">Apply Now</button>
+            </div>
+            <div class="card w-[300px] md:w-[400px] bg-white text-[#333] px-4 py-4 hover:drop-shadow-lg hover:drop-shadow-blue-500/40 mb-4"> 
+                <div class="container flex items-center justify-between mb-5">
+                    <h1 class="font-bold text-2xl">Marketing Manager</h1>
+                    <p class="font-bold text-[#4f46e5] bg-[#e0e7ff] py-2 px-2 rounded-full max-sm:w-[160px] text-center">Full-Time</p>
+                </div>
+                <div class="container mb-5 font-bold text-xl">
+                    <div class="1 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvklEQVR4nO2V0Q2DQAxDvf+qb4iyQFW40ORCsCU+ELrAk+0gWQ8T8PnHtZtDBsGO9IrS9s5gEOxIijjJdPS+TUc0BQRvLd7hCFn/IYo7YpAz2ZGb63c1ouq6fh8PgrdWs7JH58ggU36ITCk7SSBRZxUFWX3h1XljQKiOlgxCr2gxpewkgbgj3coenSODJDlS3hGmlJ0kkKizioJ8e/7r7NV5Y0CojpYMwjuiVQ7CwsesnC3vCAbBjnAnWpb26gCqlt4eDSBq4AAAAABJRU5ErkJggg==" alt="company" height="20px" width="20px">
+                        <p>Global Brands Inc.</p>
+                    </div>
+                    <div class="2 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC60lEQVR4nO2ZS2sUQRSFyxdRfCCiRDEgiIKgYFYaf4A70V3UlWvBlQouXIgSgjtJXMTHL3ChC3fiRvGViOhGUGYzODiTrnNuJyMmksRoSZGGjDiJVUlVT4944ELT3dzur0/V7brdSv3XnyK5EcBpkncAvCYJADM2su2R7Ngpe64qmgDsADBEcpKkcQx77l2t9Z5W378qlUodJK+RnPAA+C0yx67bXKoVqlarW0k+XSpAE6CXWuvtuUKkaXoAQCUURAPMJ5s7F4gkSTpjQDTCJEnSGRWiXC6vtUMgFgTn40XUOZNN7NgQJnOmP1qJXU51WgLIdJIku2OADOUFwfm4HRRCa72B5NcWgEzYawcDyZYdPjcwRXJARA6Pjo6ut2G3SQ5mx3yGWG8wELs+8rjwZ631wYVyaa277Tke+W4FA8kWgE5OLAbRCOPqDIDhYCCckwvIgGtOADcdc+pgILYUulxURA655hSRHleXVSi5DgOfCpNVQheQbyFBktAgIrLJEaQWDATAh1YNLQDvQ4I8dHx6g6EnO4D7IUH6Pcpv99/yZe8SpwJC8mpIkF7PF2J3qBciyePBQGq12jYAPzxgpu3QsfPAFgAbaZoesfs8nDAAvtuioEKK5DuPpxgqngWFyLup4nxcjAGyL08IAD/HxsZ2BQfJYN7mCPMkCkQGcjZHR05GA7HVB0A9B5CaMWaNiimSN3Jw47KKLRHp8m1XPSG+jI+Pb1Z5yLafER3pU3lJRHbG+MYFIK3X61tUnrKLudAgInJO5a1KpbIu5MdsAB+jV6qFJCJnAoIcU62SMWYlyTcBIB6rVkvP9RczywCZBLBXFUFw7yCbuXFeFUWlUqnDfiRYAsSIMWaVKpJEpAfArAfIVJqm+1URRbLPA+SCKqqMMatJPncYUo9sxVNFloh0AZBFQLT9jafaQSRP2Fa1iROzInJUtZMAXGnixiXVbjLGrCB5r8GNB3afakfpudZ4GMCroD811T+sX1ZN6JnEqOe9AAAAAElFTkSuQmCC" alt="marker" height="20px" width="20px">
+                        <p>Chicago, IL</p>
+                    </div>
+                    <div class="3 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/0lEQVR4nO1aS4gcZRBu388Y3wg+8SZqFJ8gqCARQU+JbyR4EESj15hookISNFkDwZMXRUVC3AQPogdBs26EaOIL9LDCelgcne3u76uZnY1RDz5ayvTEyu/MdPVMz8bDFPzQTP/111//X1VfVfVE0YhGNKIFo9nZ2XPSNL2H5EaSO0lOkvwyH/q8Q9+laXp3vV4/O/o/0dzc3OkknwCwF8BfJDPP0LkAPiO5stlsLj6iCgB4AcC8d/M9lGrpTTUXWiGSD5FMumyqBmAbgLUkV4jIch36rL/l72pdlIoBPDh0BdI0PRXAWx02QACbGo3G5d61Go3GFQA2A5AOh/FmHMenDM2RAXwRCNxPctUgQvVwSK4m+XOw9ucqcxhKfBcI+lBEzq9KhohcAGBXIGOqMmVycwpv4sUsy44u4iV5Hcn1SZJc6ZGVZdkxAMYCWfvq9frJAyvSwSdWOTd1LIBmvpl6lmVHeWWSXBPIfL2K6HTYTXh51SQsb1k/ArAlkP3AIECXWJ/wmNPMzMyJAB4h+V6wkQkNv7puCTObMGvM9oUzCnY2OnkcW0MqyekCAExFZKlnD41G40KSBwzvxn5Qu1XGL5rN5sWKJ04k358kyRLPXgA8YzOAUreiuZMFO499A3jH8PwG4HkAN5O8VkRuFJEnATTMpt4tETXFrP24WxFNAI3ATUXzW63WmQD+MDz3d5onIrebOX+KyGnO/YwZvk/LgN+hLNaTdgC4xQia6xVqNWjkc7/2huQkSZbYA3CVAHk90Wb6wSMIwK3m6tFr7vT09AlqarVa7STP2m0C8FNbhtYzURHlRVFbkW2FDAeVP09Pygi6I6qYSG43h7XBw7DTKLLWK8iYTJYj+qNxHF/SarXO0JFl2XGDKALgWaPIuEeR3YZhhVdQmqZXk/y1R8hVv/tGQ3lZs1ISkYfNepNREakTthlEZFlUggDcFabjXZSaSpLk0jJri8gys8ZXQ1VEqdlsXgTgFQA/Fij0vZrcMBXZ3Y9pdYtQbR9J0/Qqki/boEBy6zBNa4cxgXVRxaSIb1OOLMuOd/I9ZxR5u5BBQ1vZ8FuG1NEB/G5kXNNH+F1fFhBr3g3Oz8+fRfI2NaeiuQq0xg+XlgVEEVleyKDwb+1YU3PnKbdbPO878rJS66cH/etQiqKHFnko7wC2GTcXzY/j+Fybn6VpelOneZpbkXzVmEjsKdYAvGR49kRe0jamUUScafxHNt8i+ZiI3KBpvA4A95L8IAjBTzn2ssim/7quWxEtXoLCarVD4PW9kL3D+MSTtgBYZzPr0uWuTR4VrbXv5BB6p6dKzIuwRR5w5eGlbnG06rDIYrVhI3yXNgSK+NQR8wTPAquObwG8oZHN206iWUNbSt5C7D+kDeXgJMcWqh1Ecmsg+75oENKGcnCyazx8enu50/9ToJVp0ME0HPLxWjQo6UlqQzk4nS0eM9MSVVMLEbmshDltDWTtraRlaur4qUDAhPadKhHwbztpMkz3K/9ElyP+vuDKD4jI09qy6XfdHCc0xP7S4SaG851Rr1gbyh3CqWgg8Dbd2mmHInYAdlnbJyozp16kDWXtxXbBCE3utmsI1hpCOx469DkPy/qu3oW3PnB06hNnNgQZQF9DEVvBTvrFiQoVWqkdwKD6K9q8zt2jLdAj+nm6E6lz5l9wtTgbB/Bx+w8D+fO4vtM57lR8RCMaUVQF/Q0G+kgqpnKKmAAAAABJRU5ErkJggg==" alt="us-dollar-circled--v2" height="20px" width="20px">
+                        <p>$90,000 - $120,000</p>
+                    </div>
+                </div>
+                <p class="mb-5 font-bold text-xl">Seeking a Marketing Manager to develop and implement marketing strategies across digital and traditional channels.</p>
+                <button class="font-bold text-xl bg-[#2d56d2] text-white py-2 px-2 w-[150px] rounded-[17px] hover:bg-[#1e40af] hover:drop-shadow-lg hover:drop-shadow-blue-500/40">Apply Now</button>
+            </div>
+            <div class="card w-[300px] md:w-[400px] bg-white text-[#333] px-4 py-4 hover:drop-shadow-lg hover:drop-shadow-blue-500/40 mb-4"> 
+                <div class="container flex items-center justify-between mb-5">
+                    <h1 class="font-bold text-2xl">Product Manager</h1>
+                    <p class="font-bold text-[#4f46e5] bg-[#e0e7ff] py-2 px-2 rounded-full max-sm:w-[160px] text-center">Full-Time</p>
+                </div>
+                <div class="container mb-5 font-bold text-xl">
+                    <div class="1 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvklEQVR4nO2V0Q2DQAxDvf+qb4iyQFW40ORCsCU+ELrAk+0gWQ8T8PnHtZtDBsGO9IrS9s5gEOxIijjJdPS+TUc0BQRvLd7hCFn/IYo7YpAz2ZGb63c1ouq6fh8PgrdWs7JH58ggU36ITCk7SSBRZxUFWX3h1XljQKiOlgxCr2gxpewkgbgj3coenSODJDlS3hGmlJ0kkKizioJ8e/7r7NV5Y0CojpYMwjuiVQ7CwsesnC3vCAbBjnAnWpb26gCqlt4eDSBq4AAAAABJRU5ErkJggg==" alt="company" height="20px" width="20px">
+                        <p>Innovation Products</p>
+                    </div>
+                    <div class="2 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC60lEQVR4nO2ZS2sUQRSFyxdRfCCiRDEgiIKgYFYaf4A70V3UlWvBlQouXIgSgjtJXMTHL3ChC3fiRvGViOhGUGYzODiTrnNuJyMmksRoSZGGjDiJVUlVT4944ELT3dzur0/V7brdSv3XnyK5EcBpkncAvCYJADM2su2R7Ngpe64qmgDsADBEcpKkcQx77l2t9Z5W378qlUodJK+RnPAA+C0yx67bXKoVqlarW0k+XSpAE6CXWuvtuUKkaXoAQCUURAPMJ5s7F4gkSTpjQDTCJEnSGRWiXC6vtUMgFgTn40XUOZNN7NgQJnOmP1qJXU51WgLIdJIku2OADOUFwfm4HRRCa72B5NcWgEzYawcDyZYdPjcwRXJARA6Pjo6ut2G3SQ5mx3yGWG8wELs+8rjwZ631wYVyaa277Tke+W4FA8kWgE5OLAbRCOPqDIDhYCCckwvIgGtOADcdc+pgILYUulxURA655hSRHleXVSi5DgOfCpNVQheQbyFBktAgIrLJEaQWDATAh1YNLQDvQ4I8dHx6g6EnO4D7IUH6Pcpv99/yZe8SpwJC8mpIkF7PF2J3qBciyePBQGq12jYAPzxgpu3QsfPAFgAbaZoesfs8nDAAvtuioEKK5DuPpxgqngWFyLup4nxcjAGyL08IAD/HxsZ2BQfJYN7mCPMkCkQGcjZHR05GA7HVB0A9B5CaMWaNiimSN3Jw47KKLRHp8m1XPSG+jI+Pb1Z5yLafER3pU3lJRHbG+MYFIK3X61tUnrKLudAgInJO5a1KpbIu5MdsAB+jV6qFJCJnAoIcU62SMWYlyTcBIB6rVkvP9RczywCZBLBXFUFw7yCbuXFeFUWlUqnDfiRYAsSIMWaVKpJEpAfArAfIVJqm+1URRbLPA+SCKqqMMatJPncYUo9sxVNFloh0AZBFQLT9jafaQSRP2Fa1iROzInJUtZMAXGnixiXVbjLGrCB5r8GNB3afakfpudZ4GMCroD811T+sX1ZN6JnEqOe9AAAAAElFTkSuQmCC" alt="marker" height="20px" width="20px">
+                        <p>San Francisco, CA</p>
+                    </div>
+                    <div class="3 flex items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/0lEQVR4nO1aS4gcZRBu388Y3wg+8SZqFJ8gqCARQU+JbyR4EESj15hookISNFkDwZMXRUVC3AQPogdBs26EaOIL9LDCelgcne3u76uZnY1RDz5ayvTEyu/MdPVMz8bDFPzQTP/111//X1VfVfVE0YhGNKIFo9nZ2XPSNL2H5EaSO0lOkvwyH/q8Q9+laXp3vV4/O/o/0dzc3OkknwCwF8BfJDPP0LkAPiO5stlsLj6iCgB4AcC8d/M9lGrpTTUXWiGSD5FMumyqBmAbgLUkV4jIch36rL/l72pdlIoBPDh0BdI0PRXAWx02QACbGo3G5d61Go3GFQA2A5AOh/FmHMenDM2RAXwRCNxPctUgQvVwSK4m+XOw9ucqcxhKfBcI+lBEzq9KhohcAGBXIGOqMmVycwpv4sUsy44u4iV5Hcn1SZJc6ZGVZdkxAMYCWfvq9frJAyvSwSdWOTd1LIBmvpl6lmVHeWWSXBPIfL2K6HTYTXh51SQsb1k/ArAlkP3AIECXWJ/wmNPMzMyJAB4h+V6wkQkNv7puCTObMGvM9oUzCnY2OnkcW0MqyekCAExFZKlnD41G40KSBwzvxn5Qu1XGL5rN5sWKJ04k358kyRLPXgA8YzOAUreiuZMFO499A3jH8PwG4HkAN5O8VkRuFJEnATTMpt4tETXFrP24WxFNAI3ATUXzW63WmQD+MDz3d5onIrebOX+KyGnO/YwZvk/LgN+hLNaTdgC4xQia6xVqNWjkc7/2huQkSZbYA3CVAHk90Wb6wSMIwK3m6tFr7vT09AlqarVa7STP2m0C8FNbhtYzURHlRVFbkW2FDAeVP09Pygi6I6qYSG43h7XBw7DTKLLWK8iYTJYj+qNxHF/SarXO0JFl2XGDKALgWaPIuEeR3YZhhVdQmqZXk/y1R8hVv/tGQ3lZs1ISkYfNepNREakTthlEZFlUggDcFabjXZSaSpLk0jJri8gys8ZXQ1VEqdlsXgTgFQA/Fij0vZrcMBXZ3Y9pdYtQbR9J0/Qqki/boEBy6zBNa4cxgXVRxaSIb1OOLMuOd/I9ZxR5u5BBQ1vZ8FuG1NEB/G5kXNNH+F1fFhBr3g3Oz8+fRfI2NaeiuQq0xg+XlgVEEVleyKDwb+1YU3PnKbdbPO878rJS66cH/etQiqKHFnko7wC2GTcXzY/j+Fybn6VpelOneZpbkXzVmEjsKdYAvGR49kRe0jamUUScafxHNt8i+ZiI3KBpvA4A95L8IAjBTzn2ssim/7quWxEtXoLCarVD4PW9kL3D+MSTtgBYZzPr0uWuTR4VrbXv5BB6p6dKzIuwRR5w5eGlbnG06rDIYrVhI3yXNgSK+NQR8wTPAquObwG8oZHN206iWUNbSt5C7D+kDeXgJMcWqh1Ecmsg+75oENKGcnCyazx8enu50/9ToJVp0ME0HPLxWjQo6UlqQzk4nS0eM9MSVVMLEbmshDltDWTtraRlaur4qUDAhPadKhHwbztpMkz3K/9ElyP+vuDKD4jI09qy6XfdHCc0xP7S4SaG851Rr1gbyh3CqWgg8Dbd2mmHInYAdlnbJyozp16kDWXtxXbBCE3utmsI1hpCOx469DkPy/qu3oW3PnB06hNnNgQZQF9DEVvBTvrFiQoVWqkdwKD6K9q8zt2jLdAj+nm6E6lz5l9wtTgbB/Bx+w8D+fO4vtM57lR8RCMaUVQF/Q0G+kgqpnKKmAAAAABJRU5ErkJggg==" alt="us-dollar-circled--v2" height="20px" width="20px">
+                        <p>$125,000 - $150,000</p>
+                    </div>
+                </div>
+                <p class="mb-5 font-bold text-xl">Looking for an experienced Product Manager to oversee product development lifecycle from conception to launch</p>
+                <button class="font-bold text-xl bg-[#2d56d2] text-white py-2 px-2 w-[150px] rounded-[17px] hover:bg-[#1e40af] hover:drop-shadow-lg hover:drop-shadow-blue-500/40">Apply Now</button>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-[#1e293b] font-bold text-center md:text-center text-white flex flex-col items-center justify-center h-content md:h-[10vh]">
+        <h2>Not-So-Terms of Service</h2>
+        <h3>© 2024 SillySlip Ltd. No Bananas Were Harmed In The Making Of This Website.</h3>
+        <h4>Made by Yahya Semak</h4>
+    </footer>
+</body>
+</html>
